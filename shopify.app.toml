@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "327a2193c75aac7741ab76b7f5ab79d3"
+name = "Wishlist-AppBlock"
+handle = "wishlist-appblock"
+application_url = "https://review-rug-model-logitech.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-bando.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://review-rug-model-logitech.trycloudflare.com/auth/callback",
+  "https://review-rug-model-logitech.trycloudflare.com/auth/shopify/callback",
+  "https://review-rug-model-logitech.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
